@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Modern eSignature Pad</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Draw your eSignature here</h1>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="controls">
+        <div>
+            <label>Color</label>
+            <input type="color" id="colorPicker" value="#000000">
+        </div>
+
+        <div>
+            <label>Brush Size</label>
+            <input type="range" id="brushSize" min="1" max="20" value="3">
+        </div>
+
+        <button id="eraser">Eraser</button>
+    </div>
+
+    <div class="buttons">
+        <button id="clear">Clear</button>
+        <button id="download">Download</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
